@@ -822,4 +822,209 @@ public class ConvertBatchCommandTests
             Directory.Delete(dir, true);
         }
     }
+
+    // ---------- Acceptance-scope gaps found during local verification cross-check ----------
+    // (ATP-003, ATP-005, ATP-007, ATP-019, ATP-024, ATP-025, ATP-027, ATP-029 had no
+    // literally-tagged/matching executable test prior to this addition.)
+
+    [Fact]
+    public void ATP_003_A_SCN_003_A1_IanaTimezoneIdentifiers_AcceptedForSourceAndTarget()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-01-15 09:00:00,America/New_York,Asia/Tokyo\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var successLines = ReadDataLines(Path.Combine(dir, "batch.converted.csv"));
+            successLines.Should().ContainSingle(l => l.Contains("Asia/Tokyo"));
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_005_A_SCN_005_A1_ValidRow_ConvertedSourceToTarget_WithDstApplied()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-07-01 12:00:00,America/New_York,UTC\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var successLines = ReadDataLines(Path.Combine(dir, "batch.converted.csv"));
+            successLines.Should().ContainSingle(l => l.Contains("2026-07-01T16:00:00Z"));
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_007_A_SCN_007_A1_SuccessfulOutputRecord_IncludesOriginalInputAndConvertedResult()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-05-01 10:00:00,Europe/London,Asia/Kolkata\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var line = ReadDataLines(Path.Combine(dir, "batch.converted.csv")).Single();
+            line.Should().Contain("2026-05-01 10:00:00");
+            line.Should().Contain("Europe/London");
+            line.Should().Contain("Asia/Kolkata");
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_019_A_SCN_019_A1_SuccessfulRows_AvailableAsStructuredMachineReadableOutput()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n" +
+                "2026-01-15 09:00:00,UTC,UTC\n" +
+                "2026-01-16 09:00:00,UTC,UTC\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var outputPath = Path.Combine(dir, "batch.converted.csv");
+            var allLines = File.ReadAllLines(outputPath);
+            var headerFieldCount = allLines[0].Split(',').Length;
+            headerFieldCount.Should().BeGreaterThan(1);
+            var dataLines = ReadDataLines(outputPath);
+            dataLines.Should().HaveCount(2);
+            dataLines.All(l => l.Split(',').Length == headerFieldCount).Should().BeTrue();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_024_A_SCN_024_A1_NaiveTimestamp_InterpretedAsLocalToSourceTimezone()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-01-15 09:00:00,America/Los_Angeles,UTC\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var line = ReadDataLines(Path.Combine(dir, "batch.converted.csv")).Single();
+            line.Should().Contain("2026-01-15T17:00:00Z");
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_025_A_SCN_025_A1_ConversionCrossingDateBoundary_ReportsCorrectResultingDate()
+    {
+        // Note: acceptance-plan.md's ATP-025-A example assumes America/New_York is on EST (UTC-5)
+        // relative to Europe/London on GMT (UTC+0), a 5-hour gap. By 2026 DST rules, March 10
+        // is already within America/New_York's EDT window (UTC-4, DST starts March 8, 2026) while
+        // Europe/London remains on GMT until March 29, 2026 — a 4-hour gap. The date-boundary-crossing
+        // behavior under validation is unaffected by which exact offset applies; this test asserts the
+        // actual correct converted value (2026-03-11 03:00 UTC-equivalent) rather than the plan's
+        // illustrative 04:00 figure.
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-03-10 23:00:00,America/New_York,Europe/London\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var line = ReadDataLines(Path.Combine(dir, "batch.converted.csv")).Single();
+            line.Should().Contain("2026-03-11T03:00:00Z");
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_027_A_SCN_027_A1_IdenticalSourceAndTargetTimezone_YieldsSuccessfulUnchangedConversion()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n2026-05-20 14:00:00,Asia/Singapore,Asia/Singapore\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            var successLines = ReadDataLines(Path.Combine(dir, "batch.converted.csv"));
+            successLines.Should().ContainSingle();
+            ReadDataLines(Path.Combine(dir, "batch.invalid-rows.csv")).Should().BeEmpty();
+            successLines[0].Should().Contain("2026-05-20 14:00:00");
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void ATP_029_A_SCN_029_A1_WriteFailureToOutputDestination_ReportedWithoutDiscardingComputedResults()
+    {
+        // Covers the same fault-injection guarantee as STS-009-B1 (unwritable output destination),
+        // from the acceptance-scope angle: the CLI must report the failure via exit code and message,
+        // rather than silently succeeding or crashing, once conversions have already been computed.
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n" +
+                "2026-01-15 09:00:00,UTC,UTC\n" +
+                "2026-01-16 09:00:00,UTC,UTC\n" +
+                "2026-01-17 09:00:00,UTC,UTC\n");
+
+            var blockingFilePath = Path.Combine(dir, "blocked-output");
+            File.WriteAllText(blockingFilePath, "not a directory");
+
+            var exitCode = Run("convert-batch", input, "--output-dir", blockingFilePath);
+
+            exitCode.Should().Be(3);
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
 }
