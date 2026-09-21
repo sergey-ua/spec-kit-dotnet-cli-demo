@@ -118,69 +118,69 @@ REQ → SYS → STP → STS
 
 | Requirement ID | System Component (SYS) | Component Name | Test Case ID (STP) | Technique | Scenario ID (STS) | Status |
 |---|---|---|---|---|---|---|
-| **REQ-001** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| **REQ-002** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-003** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-004** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-005** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-006** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⚠️ No direct test match found |
-| **REQ-007** | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ⚠️ No direct test match found |
-| **REQ-008** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-009** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-010** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-011** | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⚠️ No direct test match found |
-| **REQ-012** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-013** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-014** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-015** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-016** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ⚠️ No direct test match found |
-| **REQ-017** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-018** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ⚠️ No direct test match found |
-| | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| **REQ-019** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-020** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-021** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-022** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-023** | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| **REQ-024** | SYS-004 | Timestamp Interpretation Component | STP-004-A | Interface Contract Testing | STS-004-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-004 | Timestamp Interpretation Component | STP-004-B | Boundary Value Analysis | STS-004-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-025** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-026** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ⚠️ No direct test match found |
-| **REQ-027** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-028** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-029** | SYS-009 | Output Writer | STP-009-B | Fault Injection | STS-009-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
-| **REQ-NF-001** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⚠️ No direct test match found |
-| | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ⚠️ No direct test match found |
-| **REQ-NF-002** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `5291c59`) |
-| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-NF-003** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `5291c59`) |
-| **REQ-NF-004** | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ⚠️ No direct test match found |
-| **REQ-NF-005** | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`) |
+| **REQ-001** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-002** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-003** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-004** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-005** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-006** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-007** | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-008** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-009** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-010** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-011** | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-012** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-013** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-014** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-015** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-016** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-017** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-018** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-019** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-020** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-021** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-022** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-023** | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-024** | SYS-004 | Timestamp Interpretation Component | STP-004-A | Interface Contract Testing | STS-004-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-004 | Timestamp Interpretation Component | STP-004-B | Boundary Value Analysis | STS-004-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-025** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-026** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-027** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-028** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-029** | SYS-009 | Output Writer | STP-009-B | Fault Injection | STS-009-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-NF-001** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-NF-002** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-NF-003** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-NF-004** | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
+| **REQ-NF-005** | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ✅ Passed (2026-09-21, `4a846ba`) |
 
 **Matrix B totals**: 34 REQs / 11 SYS components / 23 STPs / 33 STSs — 63 REQ↔SYS↔STP join rows.
 - REQ → SYS coverage: 34/34 (100%) — every requirement is a parent of at least one SYS component (per `system-design.md` Decomposition View, including the cross-reference addendum for REQ-003 and REQ-NF-005).
@@ -195,7 +195,7 @@ REQ → SYS → STP → STS
 
 | Property | Value |
 |----------|-------|
-| Matrix Generated | 2026-09-21 (refreshed 2026-09-21 15:16 UTC — system testing verification pass, scope=system only) |
+| Matrix Generated | 2026-09-21 (refreshed 2026-09-21 15:52 UTC — system testing verification pass #2, scope=system only, candidate `4a846ba`) |
 | Requirements Source | `specs/003-batch-timezone-conversion/v-model/requirements.md` |
 | Requirements Last Modified | 2026-09-21 12:24:53 UTC (commit `06922fa`) |
 | Acceptance Plan Source | `specs/003-batch-timezone-conversion/v-model/acceptance-plan.md` |
@@ -204,50 +204,47 @@ REQ → SYS → STP → STS
 | System Design Last Modified | 2026-09-21 12:34:47 UTC (commit `9c5d6f2`) |
 | System Test Source | `specs/003-batch-timezone-conversion/v-model/system-test.md` |
 | System Test Last Modified | 2026-09-21 12:43:22 UTC (commit `49a3058`) |
-| Validation Tool | Manual deterministic ID cross-check (`build-matrix.sh`/`.ps1` not present in this repository checkout; all REQ/ATP/SCN/SYS/STP/STS IDs were re-enumerated and cross-referenced exhaustively by direct parsing of source files at candidate commit `5291c59`, not inferred or hallucinated) |
-| Git Commit (if available) | `5291c59` (candidate commit; working tree clean — all source artifacts and this matrix are committed as of this commit) |
+| Validation Tool | Manual deterministic ID cross-check (`build-matrix.sh`/`.ps1` not present in this repository checkout; all REQ/ATP/SCN/SYS/STP/STS IDs were re-enumerated and cross-referenced exhaustively by direct parsing of source files at candidate commit `4a846ba`, not inferred or hallucinated) |
+| Git Commit (if available) | `4a846ba` (candidate commit; working tree clean — all source artifacts and this matrix are committed as of this commit) |
 
 ---
 
 ## Verification Summary (System Scope — Matrix B Only)
 
-**Executed**: 2026-09-21 | **Commit**: `5291c59` | **Scope**: SYSTEM only (Matrix B / STS rows). Matrix A (ATP/SCN) rows were intentionally left untouched at "⬜ Pending Execution" — they are handled by a separate acceptance-scope task.
+**Executed**: 2026-09-21 (pass #2) | **Commit**: `4a846ba` (branch tip; system-relevant fix landed at `4c3e2d8`) | **Scope**: SYSTEM only (Matrix B / STS rows). Matrix A (ATP/SCN) rows were intentionally left untouched at "⬜ Pending Execution" — they are handled by a separate acceptance-scope task.
 
-**Evidence ingested**: `dotnet test` run at commit `5291c59`, converted 1:1 from three `.trx` files (Unit.trx: 45 cases, Contract.trx: 7 cases, Integration.trx: 27 cases = 79 total, all passed) into a single JUnit XML file. No `scripts/bash/ingest-test-results.sh` or `scripts/powershell/Ingest-Test-Results.ps1` exists in this repository checkout, so the mapping and matrix edits below were performed manually/deterministically by cross-referencing STS IDs embedded in test method names (and, where absent from the name, by inspecting class-level doc comments and the full method list of each test class) against `system-test.md`.
+This pass supersedes the 2026-09-21 pass #1 result (commit `5291c59`), which had flagged 9 of 33 STS scenarios as having no direct test match. Commit `4c3e2d8` ("Fix missing STS test coverage flagged by System Testing (9 scenario ids)") added an explicitly `STS_NNN_X#`-tagged executable test for every one of those 9 scenarios, plus a real bug fix (`BatchRowsOrchestrator.ProcessAll` isolating per-row exceptions so one row's crash no longer aborts the whole run — closes STS-006-B1 / the SYS-011→SYS-006 dependency edge). Commit `4a846ba` on top added acceptance-scope (Matrix A) test coverage only and made no system-scope (Matrix B/STS) changes.
 
-**Totals**: 33 STS scenarios total in `system-test.md`. 24 were confidently matched to a specific passing JUnit test case (by exact `STS_NNN_X#` token in the test method name) and are marked `✅ Passed (2026-09-21, `5291c59`)` in Matrix B above. 9 have **no direct test match found**.
+**Evidence ingested**: `dotnet test` run at commit `4a846ba` (build clean, 0 errors), converted 1:1 from three `.trx` files (Unit.trx: 48 cases, Contract.trx: 7 cases, Integration.trx: 40 cases = 95 total, all passed) into a single JUnit XML file. No `scripts/bash/ingest-test-results.sh` or `scripts/powershell/Ingest-Test-Results.ps1` exists in this repository checkout, so the mapping and matrix edits below were performed manually/deterministically by cross-referencing STS IDs embedded in test method names against `system-test.md`.
 
-Because several Matrix B rows list more than one STS ID under a single Status cell (the matrix format has one Status per REQ/SYS/STP row, not per STS), a row is marked `✅ Passed` only when **every** STS ID listed in that row has a confident match:
-- A row is marked `✅ Passed (2026-09-21, `5291c59`)` when all STS IDs in its cell matched a passing test.
-- A row is marked `⚠️ No direct test match found` when none of the STS IDs in its cell matched a test.
-- A row is marked `⚠️ Partial — see Verification Summary (2026-09-21, `5291c59`)` when the cell mixes a matched STS ID with an unmatched one (e.g. `STS-001-A1, STS-001-A2` where only A1 matched) — see the gap list below for exactly which STS ID within each such row is missing.
+**Totals**: 33 STS scenarios total in `system-test.md`. All 33 are now confidently matched to a specific passing JUnit test case by exact `STS_NNN_X#` token in the test method name (or, for STS-003-A1, an `STS_003_A1` token embedded later in a longer `ATP_013_A_SCN_013_A1_STS_003_A1_...` method name) and are marked `✅ Passed (2026-09-21, `4a846ba`)` in Matrix B above.
 
-### Confidently matched and passed (24 of 33)
+### Confidently matched and passed (33 of 33)
 
-STS-002-A1, STS-002-A2, STS-002-B1, STS-003-A2, STS-003-B1, STS-003-B2, STS-004-A1, STS-004-B1, STS-005-A1, STS-005-A2, STS-005-C1, STS-006-A1, STS-007-A1, STS-007-B1, STS-008-A1, STS-009-A1, STS-009-B1, STS-010-A1, STS-010-A2, STS-010-B1, STS-010-B2, STS-001-A1, STS-011-A2, STS-011-B1
+STS-001-A1, STS-001-A2, STS-001-B1, STS-002-A1, STS-002-A2, STS-002-B1, STS-003-A1, STS-003-A2, STS-003-B1, STS-003-B2, STS-004-A1, STS-004-B1, STS-005-A1, STS-005-A2, STS-005-B1, STS-005-B2, STS-005-C1, STS-006-A1, STS-006-B1, STS-007-A1, STS-007-B1, STS-008-A1, STS-008-B1, STS-009-A1, STS-009-B1, STS-010-A1, STS-010-A2, STS-010-B1, STS-010-B2, STS-011-A1, STS-011-A2, STS-011-B1, STS-011-B2
 
-Each matched via an exact `STS_NNN_X#_...` token in a JUnit test case name from `Unit.trx`/`Contract.trx`/`Integration.trx` (e.g. `STS_009_B1_WriteDestinationUnwritable_ReportsFailure_AndInMemoryResultsRemainRetained` in `BatchOutputWriterTests.cs`), all reporting `Pass`.
+### Gaps — none
 
-### Gaps — no direct test match found (9 of 33)
+The 9 gaps identified in pass #1 (STS-001-A2, STS-001-B1, STS-003-A1, STS-005-B1, STS-005-B2, STS-006-B1, STS-008-B1, STS-011-A1, STS-011-B2) are now closed. Each was individually re-verified by `grep`-confirming the exact test method (not inferred from a class-level doc comment):
 
-| STS ID | Row(s) affected in Matrix B | Note |
+| STS ID | New test method | File |
 |---|---|---|
-| STS-001-A2 | REQ-001, REQ-016, REQ-018 rows (SYS-001 / STP-001-A) | `CsvBatchReaderTests.cs` class doc comment claims coverage, but no test method name or body was found asserting the "file exists but unreadable (permission denied)" scenario specifically |
-| STS-001-B1 | REQ-016, REQ-018 rows (SYS-001 / STP-001-B) | Same class doc comment claims coverage; no fault-injection test method for SYS-011→SYS-001 found |
-| STS-003-A1 | REQ-003, REQ-008 through REQ-015 rows (SYS-003 / STP-003-A) | `BatchRowValidatorTests.cs` covers A2/B1/B2 by name; no test for "unparseable timestamp, recognized source/target timezone" (A1) found |
-| STS-005-B1 | REQ-026, REQ-NF-004 rows (SYS-005 / STP-005-B) | No test for the spring-forward DST boundary at the SYS-005 unit level (the ATP-026-A integration test covers the same concept at acceptance scope, but that is a Matrix A artifact, not a Matrix B/STS match) |
-| STS-005-B2 | REQ-026, REQ-NF-004 rows (SYS-005 / STP-005-B) | No test for the fall-back DST boundary at the SYS-005 unit level (ATP-026-B is the acceptance-scope analogue, not counted here) |
-| STS-006-B1 | REQ-006, REQ-011, REQ-NF-001 rows (SYS-006 / STP-006-B) | `BatchRowProcessorTests.cs` class doc comment claims coverage; no test method for the SYS-011→SYS-006 unhandled-exception fault-injection scenario found |
-| STS-008-B1 | REQ-007, REQ-NF-001 rows (SYS-008 / STP-008-B) | `SuccessfulResultFormatterTests.cs` class doc comment claims coverage; no test for the "300/300 rows, 0 missing" completeness boundary found |
-| STS-011-A1 | REQ-018, REQ-029 rows (SYS-011 / STP-011-A) | No test found for the SYS-002 column-resolution-error → SYS-011 abort sequencing scenario |
-| STS-011-B2 | REQ-023, REQ-NF-005 rows (SYS-011 / STP-011-B) | No test found asserting the 10,000-row single-pass boundary at the SYS-011 orchestrator level (`ATP_NF_005_A_SCN_NF_005_A1_10000RowFile_CompletesInSingleRun` in `ConvertBatchCommandTests.cs` covers the same concept at acceptance scope, not counted here) |
-
-These 9 gaps were deliberately marked `⚠️ No direct test match found` (or, where mixed into a row with a matched STS ID, `⚠️ Partial — see Verification Summary`) rather than `✅ Passed`, since no JUnit test case could be confidently attributed to them — several test classes carry doc comments claiming broader STS coverage than their actual test method set delivers.
+| STS-001-A2 | `STS_001_A2_FileExistsButUnreadable_ReturnsFileLevelUnreadableError_NoRowStreamProduced` | `ConvertBatchCommandTests.cs` |
+| STS-001-B1 | `STS_001_B1_SYS001RaisesFileLevelError_SYS011AbortsImmediately_SYS002AndSYS006NeverInvoked` | `ConvertBatchCommandTests.cs` |
+| STS-003-A1 | `ATP_013_A_SCN_013_A1_STS_003_A1_UnparseableTimestamp_ReasonReferencesTimestampField` | `ConvertBatchCommandTests.cs` |
+| STS-005-B1 | `STS_005_B1_SpringForwardNonexistentHour_ResolvesToConvertedResult_NotAnException` | `TimeServiceDstBoundaryTests.cs` |
+| STS-005-B2 | `STS_005_B2_FallBackRepeatedHour_ResolvesToExactlyOneConvertedResult_AccurateToTheMinute` | `TimeServiceDstBoundaryTests.cs` |
+| STS-006-B1 | `STS_006_B1_UnhandledExceptionFromRowTwo_OrchestratorContinuesToRowsThreeAndFour` | `BatchRowsOrchestratorTests.cs` (new file; new `BatchRowsOrchestrator` production class) |
+| STS-008-B1 | `STS_008_B1_300ValidRows_ProducesExactly300SuccessfulOutputRecords_ZeroMissing` | `ConvertBatchCommandTests.cs` |
+| STS-011-A1 | `STS_011_A1_SYS002ColumnResolutionError_SYS011AbortsRun_ZeroRowsSubmittedToSYS006` | `ConvertBatchCommandTests.cs` |
+| STS-011-B2 | `STS_011_B2_10000ValidRows_SinglePassCompletion_SummaryReportsTotal10000Succeeded10000Failed0` | `ConvertBatchCommandTests.cs` |
 
 ### Evidence files
 
-Copied to `specs/003-batch-timezone-conversion/v-model/evidence/system-2026-09-21/`:
-- `junit-results.xml` (79 test cases, all passed)
-- `Unit.trx`, `Contract.trx`, `Integration.trx`, `full.trx`
+Copied to `specs/003-batch-timezone-conversion/v-model/evidence/system-2026-09-21b/`:
+- `junit-results.xml` (95 test cases, all passed)
+- `Unit.trx`, `Contract.trx`, `Integration.trx`
 
-**Commit used for all Status entries above**: `5291c59`. **Date used**: 2026-09-21.
+Prior pass #1 evidence remains at `specs/003-batch-timezone-conversion/v-model/evidence/system-2026-09-21/` (commit `5291c59`, 79 cases) for historical reference.
+
+**Commit used for all Status entries above**: `4a846ba`. **Date used**: 2026-09-21.
