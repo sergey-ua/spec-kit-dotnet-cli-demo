@@ -10,6 +10,7 @@ var rootCommand = new RootCommand("Timezone utility for managing times across di
 // Add commands
 rootCommand.AddCommand(NowCommand.Create());
 rootCommand.AddCommand(ConvertCommand.Create());
+rootCommand.AddCommand(ConvertBatchCommand.Create());
 rootCommand.AddCommand(MeetingCommand.Create());
 rootCommand.AddCommand(DashboardCommand.Create());
 rootCommand.AddCommand(ProfileCommand.Create());
