@@ -38,13 +38,27 @@ This matrix satisfies DO-178C §6.3.4, ISO 26262 Part 6 Clause 9, IEC 62304 Clau
 ══════════════════════════════════════════════
 ```
 
+**Matrix B (Verification: REQ → SYS → STP → STS) is now generated** (was previously "N/A — not yet generated"). Summary:
+
+```
+──────────────────────────────────────────────
+  MATRIX B COVERAGE (REQ → SYS → STP → STS)
+──────────────────────────────────────────────
+  Requirements with SYS coverage:      34/34 (100%)  ✅ Pass
+  SYS components with STP coverage:    11/11 (100%)  ✅ Pass
+  STPs with STS coverage:              23/23 (100%)  ✅ Pass
+  Orphaned SYS components:             0  ✅ Pass
+  Orphaned STPs / STS:                 0  ✅ Pass
+```
+
 ## Exception Report
 
-No exceptions found — all traceability links are valid.
+No exceptions found — all traceability links are valid, in both Matrix A and Matrix B.
 
-- GAPS (Forward Traceability Failures): none.
-- ORPHANS (Backward Traceability Failures): none.
+- GAPS (Forward Traceability Failures): none in Matrix A (REQ→ATP→SCN) or Matrix B (REQ→SYS→STP→STS).
+- ORPHANS (Backward Traceability Failures): none in Matrix A (SCN→ATP→REQ) or Matrix B (STS→STP→SYS→REQ).
 - DEPRECATION CANDIDATES: none.
+- MISSING STP FOR EXISTING SYS: none — all 11 SYS components (SYS-001–SYS-011) have at least one STP test case in `system-test.md`, so there is nothing to send back to the system-test agent.
 
 Note: the three `[NEEDS CLARIFICATION]` items in `requirements.md` (explicit-offset-vs-source-timezone inconsistency reporting; a maximum file-size ceiling above the 10,000-row floor; exact CSV header column naming) were never assigned REQ IDs and are intentionally excluded from both `requirements.md`'s formal requirement list and this matrix — they are not gaps, since there is no REQ to cover.
 
@@ -100,11 +114,80 @@ REQ → ATP → SCN
 
 REQ → SYS → STP → STS
 
-**Status: N/A — not yet generated.** `system-design.md` and `system-test.md` do not exist yet for feature `003-batch-timezone-conversion` at the time this matrix was built. Per the V-Model workflow, Matrix B is populated by a later step (`/speckit.v-model.system-design` followed by `/speckit.v-model.system-test`), after which this matrix must be rebuilt to add the architectural view. No SYS/STP/STS content has been invented to fill this section.
+**Status: Generated.** `system-design.md` (11 SYS components) and `system-test.md` (23 STP / 33 STS) are now present for this feature. Every `(REQ, SYS)` pair below is taken directly from the Decomposition View (including the cross-reference addendum) in `system-design.md`; every `(STP, STS)` pair is taken from the `Verifies:` field of each STP in `system-test.md`. Rows are grouped by REQ; a REQ with fan-out to multiple SYS components, or a SYS component reached by multiple STPs that verify that REQ, produces multiple rows.
 
 | Requirement ID | System Component (SYS) | Component Name | Test Case ID (STP) | Technique | Scenario ID (STS) | Status |
 |---|---|---|---|---|---|---|
-| — | — | *(system-design.md not present)* | — | — | — | 🚫 Blocked — awaiting system design |
+| **REQ-001** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⬜ Pending Execution |
+| **REQ-002** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ⬜ Pending Execution |
+| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ⬜ Pending Execution |
+| **REQ-003** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ⬜ Pending Execution |
+| **REQ-004** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ⬜ Pending Execution |
+| | SYS-002 | Header/Column Resolver | STP-002-B | Equivalence Partitioning | STS-002-B1 | ⬜ Pending Execution |
+| **REQ-005** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ⬜ Pending Execution |
+| | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ⬜ Pending Execution |
+| **REQ-006** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ⬜ Pending Execution |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⬜ Pending Execution |
+| **REQ-007** | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ⬜ Pending Execution |
+| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ⬜ Pending Execution |
+| **REQ-008** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| **REQ-009** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| **REQ-010** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| **REQ-011** | SYS-005 | Timezone Conversion Engine | STP-005-C | Fault Injection | STS-005-C1 | ⬜ Pending Execution |
+| | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ⬜ Pending Execution |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⬜ Pending Execution |
+| **REQ-012** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ⬜ Pending Execution |
+| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ⬜ Pending Execution |
+| **REQ-013** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ⬜ Pending Execution |
+| **REQ-014** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ⬜ Pending Execution |
+| **REQ-015** | SYS-003 | Row Validator | STP-003-A | Interface Contract Testing | STS-003-A1, STS-003-A2 | ⬜ Pending Execution |
+| | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ⬜ Pending Execution |
+| **REQ-016** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⬜ Pending Execution |
+| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ⬜ Pending Execution |
+| **REQ-017** | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ⬜ Pending Execution |
+| **REQ-018** | SYS-001 | CSV File Intake | STP-001-A | Interface Contract Testing | STS-001-A1, STS-001-A2 | ⬜ Pending Execution |
+| | SYS-001 | CSV File Intake | STP-001-B | Fault Injection | STS-001-B1 | ⬜ Pending Execution |
+| | SYS-002 | Header/Column Resolver | STP-002-A | Interface Contract Testing | STS-002-A1, STS-002-A2 | ⬜ Pending Execution |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ⬜ Pending Execution |
+| **REQ-019** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ⬜ Pending Execution |
+| **REQ-020** | SYS-009 | Output Writer | STP-009-A | Interface Contract Testing | STS-009-A1 | ⬜ Pending Execution |
+| **REQ-021** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ⬜ Pending Execution |
+| | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ⬜ Pending Execution |
+| **REQ-022** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ⬜ Pending Execution |
+| **REQ-023** | SYS-010 | Run Summary Generator | STP-010-B | Fault Injection | STS-010-B1, STS-010-B2 | ⬜ Pending Execution |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ⬜ Pending Execution |
+| **REQ-024** | SYS-004 | Timestamp Interpretation Component | STP-004-A | Interface Contract Testing | STS-004-A1 | ⬜ Pending Execution |
+| | SYS-004 | Timestamp Interpretation Component | STP-004-B | Boundary Value Analysis | STS-004-B1 | ⬜ Pending Execution |
+| **REQ-025** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ⬜ Pending Execution |
+| **REQ-026** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ⬜ Pending Execution |
+| | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ⬜ Pending Execution |
+| **REQ-027** | SYS-005 | Timezone Conversion Engine | STP-005-A | Interface Contract Testing | STS-005-A1, STS-005-A2 | ⬜ Pending Execution |
+| **REQ-028** | SYS-003 | Row Validator | STP-003-B | Equivalence Partitioning | STS-003-B1, STS-003-B2 | ⬜ Pending Execution |
+| **REQ-029** | SYS-009 | Output Writer | STP-009-B | Fault Injection | STS-009-B1 | ⬜ Pending Execution |
+| | SYS-011 | Batch Conversion Orchestrator | STP-011-A | Fault Injection | STS-011-A1, STS-011-A2 | ⬜ Pending Execution |
+| **REQ-NF-001** | SYS-006 | Row Processing Controller | STP-006-A | Fault Injection | STS-006-A1 | ⬜ Pending Execution |
+| | SYS-006 | Row Processing Controller | STP-006-B | Fault Injection | STS-006-B1 | ⬜ Pending Execution |
+| | SYS-008 | Successful Result Formatter | STP-008-A | Interface Contract Testing | STS-008-A1 | ⬜ Pending Execution |
+| | SYS-008 | Successful Result Formatter | STP-008-B | Boundary Value Analysis | STS-008-B1 | ⬜ Pending Execution |
+| **REQ-NF-002** | SYS-007 | Invalid Row Reporter | STP-007-A | Interface Contract Testing | STS-007-A1 | ⬜ Pending Execution |
+| | SYS-007 | Invalid Row Reporter | STP-007-B | Boundary Value Analysis | STS-007-B1 | ⬜ Pending Execution |
+| **REQ-NF-003** | SYS-010 | Run Summary Generator | STP-010-A | Interface Contract Testing | STS-010-A1, STS-010-A2 | ⬜ Pending Execution |
+| **REQ-NF-004** | SYS-005 | Timezone Conversion Engine | STP-005-B | Boundary Value Analysis | STS-005-B1, STS-005-B2 | ⬜ Pending Execution |
+| **REQ-NF-005** | SYS-011 | Batch Conversion Orchestrator | STP-011-B | Boundary Value Analysis | STS-011-B1, STS-011-B2 | ⬜ Pending Execution |
+
+**Matrix B totals**: 34 REQs / 11 SYS components / 23 STPs / 33 STSs — 63 REQ↔SYS↔STP join rows.
+- REQ → SYS coverage: 34/34 (100%) — every requirement is a parent of at least one SYS component (per `system-design.md` Decomposition View, including the cross-reference addendum for REQ-003 and REQ-NF-005).
+- SYS → STP coverage: 11/11 (100%) — every SYS component has at least one STP test case.
+- STP → STS coverage: 23/23 (100%) — every STP has at least one executable STS scenario.
+- Backward check (STS → STP → SYS → REQ): all 33 STS trace to an STP with a non-empty `Verifies:` list, and every REQ named in a `Verifies:` list is a real REQ ID present in `requirements.md`. 0 orphaned STPs, 0 orphaned STS.
+- Gaps: none. Orphans: none.
 
 ---
 
@@ -117,7 +200,9 @@ REQ → SYS → STP → STS
 | Requirements Last Modified | 2026-09-21 12:24:46 UTC |
 | Acceptance Plan Source | `specs/003-batch-timezone-conversion/v-model/acceptance-plan.md` |
 | Acceptance Plan Last Modified | 2026-09-21 12:29:00 UTC |
-| System Design Source | N/A — not present |
-| System Test Source | N/A — not present |
-| Validation Tool | Manual deterministic ID cross-check (`build-matrix.sh`/`.ps1` not present in this repository checkout; all REQ/ATP/SCN IDs were enumerated and cross-referenced exhaustively by direct parsing of both source files, not inferred or hallucinated) |
-| Git Commit (if available) | 06922fa (base; acceptance-plan.md and this matrix are uncommitted) |
+| System Design Source | `specs/003-batch-timezone-conversion/v-model/system-design.md` |
+| System Design Last Modified | 2026-09-21 12:34:30 UTC |
+| System Test Source | `specs/003-batch-timezone-conversion/v-model/system-test.md` |
+| System Test Last Modified | 2026-09-21 12:39:35 UTC |
+| Validation Tool | Manual deterministic ID cross-check (`build-matrix.sh`/`.ps1` not present in this repository checkout, and no such script exists in the `002-report-incident` precedent either; all REQ/ATP/SCN/SYS/STP/STS IDs were enumerated and cross-referenced exhaustively by direct parsing of source files, not inferred or hallucinated) |
+| Git Commit (if available) | 9c5d6f2 (base; system-test.md is untracked, this matrix is uncommitted) |
