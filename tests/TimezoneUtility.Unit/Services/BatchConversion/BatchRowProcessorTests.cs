@@ -10,7 +10,10 @@ namespace TimezoneUtility.Unit.Services.BatchConversion;
 /// <summary>
 /// T024: Unit tests for BatchRowProcessor fault isolation.
 /// Verifies REQ-006, REQ-011, REQ-NF-001.
-/// Corresponds to STP-005-C, STP-006-A, STP-006-B (STS-005-C1, STS-006-A1, STS-006-B1).
+/// Corresponds to STP-005-C, STP-006-A (STS-005-C1, STS-006-A1). STS-006-B1 (the SYS-011-&gt;SYS-006
+/// dependency-edge fault injection, where SYS-006 itself raises an unhandled exception) is covered in
+/// <see cref="BatchRowsOrchestratorTests"/> instead, since it exercises the orchestrator boundary above
+/// this class, not BatchRowProcessor's own internal try/catch.
 /// </summary>
 public class BatchRowProcessorTests
 {

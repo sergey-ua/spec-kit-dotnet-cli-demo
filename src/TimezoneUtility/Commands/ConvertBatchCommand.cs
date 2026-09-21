@@ -59,21 +59,7 @@ public static class ConvertBatchCommand
         }
 
         var timeService = new TimeService();
-        var successes = new List<RowConversionResult>();
-        var failures = new List<InvalidRowRecord>();
-
-        foreach (var row in readResult.Rows)
-        {
-            var outcome = BatchRowProcessor.Process(row, timeService);
-            if (outcome.Success is not null)
-            {
-                successes.Add(outcome.Success);
-            }
-            else if (outcome.Failure is not null)
-            {
-                failures.Add(outcome.Failure);
-            }
-        }
+        var (successes, failures) = BatchRowsOrchestrator.ProcessAll(readResult.Rows, timeService);
 
         var noRowsProcessed = readResult.Rows.Count == 0;
         var summary = BatchRunSummaryGenerator.Generate(inputFile, successes.Count, failures.Count, noRowsProcessed);

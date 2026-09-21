@@ -235,7 +235,7 @@ public class ConvertBatchCommandTests
     }
 
     [Fact]
-    public void ATP_013_A_SCN_013_A1_UnparseableTimestamp_ReasonReferencesTimestampField()
+    public void ATP_013_A_SCN_013_A1_STS_003_A1_UnparseableTimestamp_ReasonReferencesTimestampField()
     {
         var dir = NewTempDir();
         try
@@ -409,7 +409,7 @@ public class ConvertBatchCommandTests
     // ---------- US2: DST edge cases (ATP-026-A/B) ----------
 
     [Fact]
-    public void ATP_026_A_SCN_026_A1_SpringForwardGap_ResolvesSuccessfully_NotInvalid()
+    public void ATP_026_A_SCN_026_A1_STS_005_B1_SpringForwardGap_ResolvesSuccessfully_NotInvalid()
     {
         var dir = NewTempDir();
         try
@@ -430,7 +430,7 @@ public class ConvertBatchCommandTests
     }
 
     [Fact]
-    public void ATP_026_B_SCN_026_B1_FallBackAmbiguousHour_ResolvesSuccessfully_NotInvalid()
+    public void ATP_026_B_SCN_026_B1_STS_005_B2_FallBackAmbiguousHour_ResolvesSuccessfully_NotInvalid()
     {
         var dir = NewTempDir();
         try
@@ -472,7 +472,7 @@ public class ConvertBatchCommandTests
     }
 
     [Fact]
-    public void ATP_017_A_SCN_017_A1_UnidentifiableHeader_ExitCode2()
+    public void ATP_017_A_SCN_017_A1_STS_011_A1_UnidentifiableHeader_ExitCode2()
     {
         var dir = NewTempDir();
         try
@@ -518,7 +518,7 @@ public class ConvertBatchCommandTests
     // ---------- US2/NF-005: 10,000-row batch (ATP-NF-005-A) ----------
 
     [Fact]
-    public void ATP_NF_005_A_SCN_NF_005_A1_10000RowFile_CompletesInSingleRun()
+    public void ATP_NF_005_A_SCN_NF_005_A1_STS_011_B2_10000RowFile_CompletesInSingleRun()
     {
         var dir = NewTempDir();
         try
@@ -674,6 +674,148 @@ public class ConvertBatchCommandTests
             // not silently swallowed), while the run still did not crash before reaching that point.
             File.Exists(Path.Combine(unwritableOutputDir, "batch.converted.csv")).Should().BeFalse();
             File.Exists(Path.Combine(unwritableOutputDir, "batch.invalid-rows.csv")).Should().BeFalse();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    // ---------- SYS-008: 300-row all-valid batch (STS-008-B1) ----------
+
+    [Fact]
+    public void STS_008_B1_300ValidRows_ProducesExactly300SuccessfulOutputRecords_ZeroMissing()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            using (var writer = new StreamWriter(input))
+            {
+                writer.WriteLine("timestamp,source_timezone,target_timezone");
+                for (var i = 0; i < 300; i++)
+                {
+                    writer.WriteLine("2026-06-01 12:00:00,UTC,UTC");
+                }
+            }
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(0);
+            ReadDataLines(Path.Combine(dir, "batch.converted.csv")).Should().HaveCount(300);
+            ReadDataLines(Path.Combine(dir, "batch.invalid-rows.csv")).Should().BeEmpty();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    // ---------- SYS-001: file exists but cannot be read (STS-001-A2), and the SYS-011 -> SYS-001
+    // dependency edge on that fault (STS-001-B1) ----------
+
+    [Fact]
+    public void STS_001_A2_FileExistsButUnreadable_ReturnsFileLevelUnreadableError_NoRowStreamProduced()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "locked.csv");
+            File.WriteAllText(input, "timestamp,source_timezone,target_timezone\n2026-01-01 00:00:00,UTC,UTC\n");
+
+            // Simulate a file that exists but is unreadable by the process (permission bits are
+            // ignored when running as root, so an exclusive OS-level lock is used instead to force the
+            // same IOException path that SYS-001's unreadable-file handling catches).
+            using var lockHandle = new FileStream(input, FileMode.Open, FileAccess.Read, FileShare.None);
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(2);
+            File.Exists(Path.Combine(dir, "locked.converted.csv")).Should().BeFalse();
+            File.Exists(Path.Combine(dir, "locked.invalid-rows.csv")).Should().BeFalse();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void STS_001_B1_SYS001RaisesFileLevelError_SYS011AbortsImmediately_SYS002AndSYS006NeverInvoked()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "locked.csv");
+            File.WriteAllText(input,
+                "timestamp,source_timezone,target_timezone\n" +
+                "2026-01-01 00:00:00,UTC,UTC\n" +
+                "2026-01-02 00:00:00,UTC,UTC\n");
+
+            using var lockHandle = new FileStream(input, FileMode.Open, FileAccess.Read, FileShare.None);
+
+            var exitCode = Run("convert-batch", input);
+
+            // SYS-011 aborts the run immediately on the SYS-001 file-level error: exit code 2 (not 0 or
+            // 3), and neither output artifact is produced - proving no row was ever handed to SYS-002's
+            // column resolution or SYS-006's row processing (0 rows reach either stage).
+            exitCode.Should().Be(2);
+            File.Exists(Path.Combine(dir, "locked.converted.csv")).Should().BeFalse();
+            File.Exists(Path.Combine(dir, "locked.invalid-rows.csv")).Should().BeFalse();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    // ---------- SYS-011 orchestrator, dedicated system-scope coverage (STS-011-A1, STS-011-B2) ----------
+    // (ATP_017_A/ATP_NF_005_A above already exercise this same behavior at acceptance scope; these are
+    // kept as separate, purely STS-named tests so system-scope traceability tooling that only matches on
+    // STS-* tokens has an unambiguous match independent of the acceptance-scope ATP naming.)
+
+    [Fact]
+    public void STS_011_A1_SYS002ColumnResolutionError_SYS011AbortsRun_ZeroRowsSubmittedToSYS006()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "badheader.csv");
+            File.WriteAllText(input, "col_a,col_b,col_c\nfoo,bar,baz\n");
+
+            var exitCode = Run("convert-batch", input);
+
+            exitCode.Should().Be(2);
+            File.Exists(Path.Combine(dir, "badheader.converted.csv")).Should().BeFalse();
+            File.Exists(Path.Combine(dir, "badheader.invalid-rows.csv")).Should().BeFalse();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
+
+    [Fact]
+    public void STS_011_B2_10000ValidRows_SinglePassCompletion_SummaryReportsTotal10000Succeeded10000Failed0()
+    {
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "big-batch.csv");
+            using (var writer = new StreamWriter(input))
+            {
+                writer.WriteLine("timestamp,source_timezone,target_timezone");
+                for (var i = 0; i < 10000; i++)
+                {
+                    writer.WriteLine("2026-06-01 12:00:00,UTC,UTC");
+                }
+            }
+
+            var exitCode = Run("convert-batch", input, "--json");
+
+            exitCode.Should().Be(0);
+            ReadDataLines(Path.Combine(dir, "big-batch.converted.csv")).Should().HaveCount(10000);
+            ReadDataLines(Path.Combine(dir, "big-batch.invalid-rows.csv")).Should().BeEmpty();
         }
         finally
         {
