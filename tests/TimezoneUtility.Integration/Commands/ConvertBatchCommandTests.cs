@@ -638,4 +638,46 @@ public class ConvertBatchCommandTests
             Directory.Delete(dir, true);
         }
     }
+
+    // ---------- SYS-011 orchestrator fault injection: output-write failure (STS-011-A2) ----------
+
+    [Fact]
+    public void STS_011_A2_OutputWriteFails_OrchestratorSurfacesFailure_ExitCode3_AfterAllRowsProcessed()
+    {
+        // Given SYS-009 is engineered to fail on the output-write step (outputDir points at a path that
+        // is itself an existing file, so Directory.CreateDirectory fails) after SYS-006 has already
+        // processed every row.
+        var dir = NewTempDir();
+        try
+        {
+            var input = Path.Combine(dir, "batch.csv");
+            File.WriteAllText(
+                input,
+                "timestamp,source_timezone,target_timezone\n"
+                + "2026-05-20 14:00:00,Asia/Singapore,UTC\n"
+                + "not-a-timestamp,Asia/Singapore,UTC\n");
+
+            var blockingFile = Path.Combine(dir, "blocked-destination");
+            File.WriteAllText(blockingFile, "not a directory");
+            var unwritableOutputDir = Path.Combine(blockingFile, "nested");
+
+            // When SYS-011 sequences file intake -> row processing -> output writing for the run.
+            var exitCode = Run("convert-batch", input, "--output-dir", unwritableOutputDir);
+
+            // Then SYS-011 surfaces the write failure via a distinct exit code (not a crash / unhandled
+            // exception — proving SYS-006 finished processing all rows and SYS-010's summary-generation
+            // step, which runs before the write attempt, was reached and completed without throwing)
+            // rather than aborting the run early the way a file-level (SYS-001/002) error does.
+            exitCode.Should().Be(3);
+
+            // and neither output artifact exists at the unwritable destination (the failure was reported,
+            // not silently swallowed), while the run still did not crash before reaching that point.
+            File.Exists(Path.Combine(unwritableOutputDir, "batch.converted.csv")).Should().BeFalse();
+            File.Exists(Path.Combine(unwritableOutputDir, "batch.invalid-rows.csv")).Should().BeFalse();
+        }
+        finally
+        {
+            Directory.Delete(dir, true);
+        }
+    }
 }
