@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="09be851d-a934-4f69-b15d-56a09f371757" name="@task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85 2026-09-21 15:10:38" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-21T15:10:38.8737819+00:00" queuing="2026-09-21T15:10:38.8737821+00:00" start="2026-09-21T15:10:38.3750336+00:00" finish="2026-09-21T15:10:38.8789371+00:00" />
+  <TestSettings name="default" id="ad60c8ab-000b-44ca-9c13-d3d60ed86e69">
+    <Deployment runDeploymentRoot="_task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85_2026-09-21_15_10_38" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="12cc1f17-1e6d-4438-9ae2-50c3fda033bc" testId="75b371a0-71e6-eb20-8b16-b760a5e9d6a5" testName="TimezoneUtility.Contract.BatchConvertContractTests.SuccessfulOutputCsv_Schema_MatchesDocumentedHeader" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0034297" startTime="2026-09-21T15:10:38.7358454+00:00" endTime="2026-09-21T15:10:38.7358455+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12cc1f17-1e6d-4438-9ae2-50c3fda033bc" />
+    <UnitTestResult executionId="4a531b62-7a14-479a-b48a-2491b2f39e47" testId="1f685c05-d479-824f-d56e-162f978cab66" testName="TimezoneUtility.Contract.BatchConvertContractTests.OutputWriteFailure_ExitsWithCode3_AndMessageMentionsCouldNotBeSaved" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0026669" startTime="2026-09-21T15:10:38.7655368+00:00" endTime="2026-09-21T15:10:38.7655368+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a531b62-7a14-479a-b48a-2491b2f39e47" />
+    <UnitTestResult executionId="a5b860ab-b326-47d0-8368-e748104da98c" testId="7b8c596f-df2f-15ca-8c48-175a2f99dcac" testName="TimezoneUtility.Contract.BatchConvertContractTests.RunSummary_Json_ContainsDocumentedFields" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0236525" startTime="2026-09-21T15:10:38.7594958+00:00" endTime="2026-09-21T15:10:38.7594958+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5b860ab-b326-47d0-8368-e748104da98c" />
+    <UnitTestResult executionId="8da5052e-25b8-4291-8ef3-4e0d3167b728" testId="34e687b4-bb53-7ce9-3a0e-0ea0edfb6a41" testName="TimezoneUtility.Contract.BatchConvertContractTests.CLI_Surface_HasInputFileArgument_OutputDirOption_JsonOption" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0031955" startTime="2026-09-21T15:10:38.7627903+00:00" endTime="2026-09-21T15:10:38.7628027+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8da5052e-25b8-4291-8ef3-4e0d3167b728" />
+    <UnitTestResult executionId="5e7a5cad-0ec6-4ac5-ad92-bfed443812d5" testId="d4c94248-0e87-c77a-3ee0-9aaf7e704cf1" testName="TimezoneUtility.Contract.BatchConvertContractTests.RunSummary_HumanReadable_DisplaysExplicitZeroFailedCount" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0677003" startTime="2026-09-21T15:10:38.7265911+00:00" endTime="2026-09-21T15:10:38.7266012+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e7a5cad-0ec6-4ac5-ad92-bfed443812d5" />
+    <UnitTestResult executionId="77bf5e3d-61a1-430e-a785-cd617bf2a6b4" testId="f932aabb-12e5-3c37-7ac9-597740b78008" testName="TimezoneUtility.Contract.BatchConvertContractTests.InvalidRowReportCsv_Schema_MatchesDocumentedHeader_AndIsSeparateFile" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0058524" startTime="2026-09-21T15:10:38.7324115+00:00" endTime="2026-09-21T15:10:38.7324116+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77bf5e3d-61a1-430e-a785-cd617bf2a6b4" />
+    <UnitTestResult executionId="913d6ab8-01c3-4bfd-90a4-6b45017566c3" testId="58af4da4-ffb3-eeaa-b243-a90293aae949" testName="TimezoneUtility.Contract.BatchConvertContractTests.CLI_Surface_SupportsHelp" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0205344" startTime="2026-09-21T15:10:38.7863128+00:00" endTime="2026-09-21T15:10:38.7863130+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="913d6ab8-01c3-4bfd-90a4-6b45017566c3" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.CLI_Surface_SupportsHelp" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="58af4da4-ffb3-eeaa-b243-a90293aae949">
+      <Execution id="913d6ab8-01c3-4bfd-90a4-6b45017566c3" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="CLI_Surface_SupportsHelp" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.RunSummary_HumanReadable_DisplaysExplicitZeroFailedCount" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="d4c94248-0e87-c77a-3ee0-9aaf7e704cf1">
+      <Execution id="5e7a5cad-0ec6-4ac5-ad92-bfed443812d5" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="RunSummary_HumanReadable_DisplaysExplicitZeroFailedCount" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.InvalidRowReportCsv_Schema_MatchesDocumentedHeader_AndIsSeparateFile" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="f932aabb-12e5-3c37-7ac9-597740b78008">
+      <Execution id="77bf5e3d-61a1-430e-a785-cd617bf2a6b4" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="InvalidRowReportCsv_Schema_MatchesDocumentedHeader_AndIsSeparateFile" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.RunSummary_Json_ContainsDocumentedFields" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="7b8c596f-df2f-15ca-8c48-175a2f99dcac">
+      <Execution id="a5b860ab-b326-47d0-8368-e748104da98c" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="RunSummary_Json_ContainsDocumentedFields" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.SuccessfulOutputCsv_Schema_MatchesDocumentedHeader" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="75b371a0-71e6-eb20-8b16-b760a5e9d6a5">
+      <Execution id="12cc1f17-1e6d-4438-9ae2-50c3fda033bc" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="SuccessfulOutputCsv_Schema_MatchesDocumentedHeader" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.CLI_Surface_HasInputFileArgument_OutputDirOption_JsonOption" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="34e687b4-bb53-7ce9-3a0e-0ea0edfb6a41">
+      <Execution id="8da5052e-25b8-4291-8ef3-4e0d3167b728" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="CLI_Surface_HasInputFileArgument_OutputDirOption_JsonOption" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Contract.BatchConvertContractTests.OutputWriteFailure_ExitsWithCode3_AndMessageMentionsCouldNotBeSaved" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.contract/bin/debug/net8.0/timezoneutility.contract.dll" id="1f685c05-d479-824f-d56e-162f978cab66">
+      <Execution id="4a531b62-7a14-479a-b48a-2491b2f39e47" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Contract/bin/Debug/net8.0/TimezoneUtility.Contract.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Contract.BatchConvertContractTests" name="OutputWriteFailure_ExitsWithCode3_AndMessageMentionsCouldNotBeSaved" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="75b371a0-71e6-eb20-8b16-b760a5e9d6a5" executionId="12cc1f17-1e6d-4438-9ae2-50c3fda033bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f685c05-d479-824f-d56e-162f978cab66" executionId="4a531b62-7a14-479a-b48a-2491b2f39e47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b8c596f-df2f-15ca-8c48-175a2f99dcac" executionId="a5b860ab-b326-47d0-8368-e748104da98c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34e687b4-bb53-7ce9-3a0e-0ea0edfb6a41" executionId="8da5052e-25b8-4291-8ef3-4e0d3167b728" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4c94248-0e87-c77a-3ee0-9aaf7e704cf1" executionId="5e7a5cad-0ec6-4ac5-ad92-bfed443812d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f932aabb-12e5-3c37-7ac9-597740b78008" executionId="77bf5e3d-61a1-430e-a785-cd617bf2a6b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58af4da4-ffb3-eeaa-b243-a90293aae949" executionId="913d6ab8-01c3-4bfd-90a4-6b45017566c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.02]   Discovering: TimezoneUtility.Contract
+[xUnit.net 00:00:00.04]   Discovered:  TimezoneUtility.Contract
+[xUnit.net 00:00:00.04]   Starting:    TimezoneUtility.Contract
+Batch conversion complete: /tmp/batch-contract-cbe7e323-b5b8-4afe-9db1-fcbfc31fd38d/batch.csv
+  Total rows processed: 2
+  Succeeded:             1
+  Failed:                1
+Successful output:      /tmp/batch-contract-cbe7e323-b5b8-4afe-9db1-fcbfc31fd38d/batch.converted.csv
+Invalid-row report:     /tmp/batch-contract-cbe7e323-b5b8-4afe-9db1-fcbfc31fd38d/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-contract-037dcc61-a098-40b8-aa8d-ee1b01466650/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-contract-037dcc61-a098-40b8-aa8d-ee1b01466650/batch.converted.csv
+Invalid-row report:     /tmp/batch-contract-037dcc61-a098-40b8-aa8d-ee1b01466650/batch.invalid-rows.csv
+Description:
+  Convert a batch of timestamps listed in a CSV file
+Usage:
+  testhost convert-batch &lt;input-file&gt; [options]
+Arguments:
+  &lt;input-file&gt;  Path to the input CSV file
+Options:
+  --output-dir &lt;output-dir&gt;  Directory to write both output files into (defaults to the input file's directory)
+  --json                     Print the run summary as JSON instead of human-readable text
+  -?, -h, --help             Show help and usage information
+[xUnit.net 00:00:00.20]   Finished:    TimezoneUtility.Contract
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

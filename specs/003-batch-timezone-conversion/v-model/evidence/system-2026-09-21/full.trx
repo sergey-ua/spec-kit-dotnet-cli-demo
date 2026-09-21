@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="7f4370e1-eae4-487d-a41b-db1efabf1cf2" name="@task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85 2026-09-21 15:10:30" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-21T15:10:30.2177893+00:00" queuing="2026-09-21T15:10:30.2177894+00:00" start="2026-09-21T15:10:29.7002105+00:00" finish="2026-09-21T15:10:30.3044281+00:00" />
+  <TestSettings name="default" id="31bb6388-2fa7-40b4-9388-ca60fa0d6243">
+    <Deployment runDeploymentRoot="_task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85_2026-09-21_15_10_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ff57cbce-0b72-422c-8b13-88eb9ab0e145" testId="dde694a2-d125-1f5d-b433-73847917a4ae" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;32/99/2026&quot;, src: &quot;America/Denver&quot;, tgt: &quot;UTC&quot;)" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0006724" startTime="2026-09-21T15:10:30.2035513+00:00" endTime="2026-09-21T15:10:30.2035513+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff57cbce-0b72-422c-8b13-88eb9ab0e145" />
+    <UnitTestResult executionId="3fe9aa08-b0ec-4722-b143-1b12e271a232" testId="4a15a0f4-9f69-000d-beef-c6562d070b91" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;2026-02-10 09:00:00&quot;, src: &quot;Mars/Colony_One&quot;, tgt: &quot;UTC&quot;)" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0007724" startTime="2026-09-21T15:10:30.2035372+00:00" endTime="2026-09-21T15:10:30.2035373+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fe9aa08-b0ec-4722-b143-1b12e271a232" />
+    <UnitTestResult executionId="a0152cc5-6601-441d-a6b6-418f4f68bd19" testId="5a72d823-a27d-0a63-6b1b-4568b656ac25" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_002_A_SCN_NF_002_A1_5InvalidRows_EachDistinctFailureCause_AllAppear" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0006962" startTime="2026-09-21T15:10:30.2038431+00:00" endTime="2026-09-21T15:10:30.2038431+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0152cc5-6601-441d-a6b6-418f4f68bd19" />
+    <UnitTestResult executionId="cb30d553-d7a4-4f71-b02d-32e7f675769d" testId="7e743f08-8ade-c063-0d26-410503358f81" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.REQ_024_NoExplicitOffset_InterpretedAsLocalToSourceTimezone" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0005763" startTime="2026-09-21T15:10:30.1902084+00:00" endTime="2026-09-21T15:10:30.1902085+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb30d553-d7a4-4f71-b02d-32e7f675769d" />
+    <UnitTestResult executionId="8499249c-7e5f-4fd3-adc8-434b5edaba77" testId="8a812e79-fb24-20ca-98fc-b6d13a5cebfd" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_023_A_SCN_023_A1_HeaderOnlyFile_CompletesCleanlyWithEmptyOutputsAndNoRowsMessage" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0011107" startTime="2026-09-21T15:10:30.2562158+00:00" endTime="2026-09-21T15:10:30.2562158+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8499249c-7e5f-4fd3-adc8-434b5edaba77" />
+    <UnitTestResult executionId="64b61c69-4c3c-47fc-b115-28fae86030f7" testId="93a8a82e-9ad5-b471-ad5f-14c97eba97d5" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_018_A_SCN_018_A1_FileLevelError_NoRowsProcessed_BothOutputsAbsent" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0009089" startTime="2026-09-21T15:10:30.2625334+00:00" endTime="2026-09-21T15:10:30.2625335+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64b61c69-4c3c-47fc-b115-28fae86030f7" />
+    <UnitTestResult executionId="55c173a8-d94a-4759-84ca-6db8f80f1e38" testId="208de7fc-435c-bb61-ffb3-ca1d9f37f74a" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_001_A_SCN_001_A1_AllValidRows_ProduceExactCountSuccessfulOutput" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0006725" startTime="2026-09-21T15:10:30.1896058+00:00" endTime="2026-09-21T15:10:30.1896058+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55c173a8-d94a-4759-84ca-6db8f80f1e38" />
+    <UnitTestResult executionId="745317fa-187b-4981-9ae8-3178b9428b32" testId="92be5d0a-4434-0a10-475c-c5bc5ae38941" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_015_A_SCN_015_A1_MissingSourceTimezone_ReasonIdentifiesTheField" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0005083" startTime="2026-09-21T15:10:30.2115591+00:00" endTime="2026-09-21T15:10:30.2115592+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="745317fa-187b-4981-9ae8-3178b9428b32" />
+    <UnitTestResult executionId="1a24b849-23c2-4d05-aa0a-b0f96bbd83e4" testId="fda9a8bb-f315-25c7-a818-6c26b7a61292" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_020_A_SCN_020_A1_InvalidReport_IsSeparateFromSuccessfulOutput" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0008605" startTime="2026-09-21T15:10:30.2605956+00:00" endTime="2026-09-21T15:10:30.2605956+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a24b849-23c2-4d05-aa0a-b0f96bbd83e4" />
+    <UnitTestResult executionId="002e209e-cbd6-4eb8-98fa-41c9e9aa0816" testId="fc2a0b53-7bbc-48d0-e44e-70be096342b2" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_006_A_SCN_006_A1_OneRowFailure_DoesNotAffectAnotherRowsSuccess" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0016194" startTime="2026-09-21T15:10:30.2037987+00:00" endTime="2026-09-21T15:10:30.2037989+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="002e209e-cbd6-4eb8-98fa-41c9e9aa0816" />
+    <UnitTestResult executionId="90bb33c5-36a1-467c-84f7-f93832d57c1a" testId="1e4d7d7b-f367-4f8c-6e6c-caba14cbd324" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_011_A_SCN_011_A1_BatchContinuesProcessingAfterInvalidRow" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0010389" startTime="2026-09-21T15:10:30.2573460+00:00" endTime="2026-09-21T15:10:30.2573461+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90bb33c5-36a1-467c-84f7-f93832d57c1a" />
+    <UnitTestResult executionId="f7f8bb1a-c5e4-4be4-82a1-a21fbb9b9a33" testId="67191c0a-183c-22a9-6421-2a33751d34ac" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_013_A_SCN_013_A1_UnparseableTimestamp_ReasonReferencesTimestampField" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0008274" startTime="2026-09-21T15:10:30.1859393+00:00" endTime="2026-09-21T15:10:30.1859395+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7f8bb1a-c5e4-4be4-82a1-a21fbb9b9a33" />
+    <UnitTestResult executionId="35f98d3d-d243-44a0-99c5-a1a1c297efcb" testId="87759ffb-a4b8-7ce0-a40e-04b5ed588513" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_004_A_SCN_004_A1_ExtraUnrecognizedColumns_AreIgnored" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0006264" startTime="2026-09-21T15:10:30.2034045+00:00" endTime="2026-09-21T15:10:30.2034046+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35f98d3d-d243-44a0-99c5-a1a1c297efcb" />
+    <UnitTestResult executionId="c540548b-7334-4782-becb-2c7c2157960d" testId="b57cffaf-4576-5f65-4ac6-87f300700312" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_014_A_SCN_014_A1_UnrecognizedTimezone_ReasonReferencesFieldAndValue" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0010081" startTime="2026-09-21T15:10:30.2615401+00:00" endTime="2026-09-21T15:10:30.2615402+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c540548b-7334-4782-becb-2c7c2157960d" />
+    <UnitTestResult executionId="6d4e502a-0862-43be-8e71-a3ff115b432f" testId="704d4a76-e119-00e8-eb55-01dab98d732d" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_016_A_SCN_016_A1_MissingInputFile_ExitCode2_NoInvalidRowEntries" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0002522" startTime="2026-09-21T15:10:30.2595761+00:00" endTime="2026-09-21T15:10:30.2595762+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d4e502a-0862-43be-8e71-a3ff115b432f" />
+    <UnitTestResult executionId="6624af0f-a2d5-4b4a-aa17-666d782e950c" testId="5a188a75-69ca-7901-be38-e09efbc529e4" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_028_A_SCN_028_A1_EntirelyBlankRow_SkippedNotCountedEitherWay" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0818263" startTime="2026-09-21T15:10:30.1832882+00:00" endTime="2026-09-21T15:10:30.1832952+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6624af0f-a2d5-4b4a-aa17-666d782e950c" />
+    <UnitTestResult executionId="b3c3617e-0b3e-49cb-bbeb-f410083a2bcc" testId="c59b1988-1ca7-6c8d-3315-409eac83b380" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_001_A_SCN_NF_001_A1_100PercentOfValidRows_ProduceConvertedResults" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0019599" startTime="2026-09-21T15:10:30.1852701+00:00" endTime="2026-09-21T15:10:30.1852702+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3c3617e-0b3e-49cb-bbeb-f410083a2bcc" />
+    <UnitTestResult executionId="701da98c-8fff-4aa8-a5af-97290b4fc488" testId="ed974b52-e5df-1d91-2532-ff5658cc96ce" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_012_A_SCN_012_A1_InvalidRowReport_ReferencesCorrectRowNumber" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0016835" startTime="2026-09-21T15:10:30.1888871+00:00" endTime="2026-09-21T15:10:30.1888873+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="701da98c-8fff-4aa8-a5af-97290b4fc488" />
+    <UnitTestResult executionId="29234840-26d0-4b0d-a7d8-283046a06529" testId="aaa22096-3808-8cff-0927-6125b8d752b9" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;2026-02-10 09:00:00&quot;, src: &quot;UTC&quot;, tgt: &quot;Europe/Atlantis&quot;)" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0008834" startTime="2026-09-21T15:10:30.2035153+00:00" endTime="2026-09-21T15:10:30.2035153+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29234840-26d0-4b0d-a7d8-283046a06529" />
+    <UnitTestResult executionId="39bbe6ff-990c-4909-b482-13f2d3e2896b" testId="3fb479a2-9a42-7ef0-3d17-b597e6ff2b86" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.STS_011_A2_OutputWriteFails_OrchestratorSurfacesFailure_ExitCode3_AfterAllRowsProcessed" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0018595" startTime="2026-09-21T15:10:30.2592810+00:00" endTime="2026-09-21T15:10:30.2592816+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39bbe6ff-990c-4909-b482-13f2d3e2896b" />
+    <UnitTestResult executionId="bcb61127-025e-47ab-8c1f-230cefbc00e4" testId="a9a3ec2a-b4c1-cb4d-2658-cd9e3e4a9e3e" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_017_A_SCN_017_A1_UnidentifiableHeader_ExitCode2" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0005484" startTime="2026-09-21T15:10:30.2038682+00:00" endTime="2026-09-21T15:10:30.2038682+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcb61127-025e-47ab-8c1f-230cefbc00e4" />
+    <UnitTestResult executionId="7f4b2ce5-0b56-44b9-aa06-9c30b2f98a2a" testId="1ae2be2a-8b10-64da-452a-4bcc01199ad2" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.REQ_027_IdenticalSourceAndTargetTimezone_StillProducesUnchangedResult" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0012081" startTime="2026-09-21T15:10:30.1871374+00:00" endTime="2026-09-21T15:10:30.1871375+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f4b2ce5-0b56-44b9-aa06-9c30b2f98a2a" />
+    <UnitTestResult executionId="4e0a3e60-a9fc-423d-a3c9-ef8b87fc8278" testId="1cfaea78-1723-8ccd-bb30-e82abe22820b" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_026_A_SCN_026_A1_SpringForwardGap_ResolvesSuccessfully_NotInvalid" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0032315" startTime="2026-09-21T15:10:30.2038559+00:00" endTime="2026-09-21T15:10:30.2038559+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e0a3e60-a9fc-423d-a3c9-ef8b87fc8278" />
+    <UnitTestResult executionId="791f56b9-5ee0-495d-bf1c-c7178f34a02f" testId="815ca812-17d6-609f-c5f1-6f6a51634bcb" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_021_022_NF_003_A_ThreeRuns_SummaryCountsAloneClassifyOutcome" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0015289" startTime="2026-09-21T15:10:30.2038301+00:00" endTime="2026-09-21T15:10:30.2038301+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="791f56b9-5ee0-495d-bf1c-c7178f34a02f" />
+    <UnitTestResult executionId="38c4a526-8f93-47d1-9825-602c4f9a480c" testId="815a1304-ed32-6eca-0083-57b5a3cd7663" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_026_B_SCN_026_B1_FallBackAmbiguousHour_ResolvesSuccessfully_NotInvalid" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0057957" startTime="2026-09-21T15:10:30.1850091+00:00" endTime="2026-09-21T15:10:30.1850091+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38c4a526-8f93-47d1-9825-602c4f9a480c" />
+    <UnitTestResult executionId="488f6c79-9570-42cc-909a-93c1d710acb5" testId="cfef96ef-d5df-a4ba-069e-7c94d3e8f723" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_002_A_SCN_002_A1_ColumnsIdentifiedByHeaderName_RegardlessOfOrder" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0016896" startTime="2026-09-21T15:10:30.1852486+00:00" endTime="2026-09-21T15:10:30.1852487+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="488f6c79-9570-42cc-909a-93c1d710acb5" />
+    <UnitTestResult executionId="4b389965-0bed-437e-b945-dbd907f94287" testId="8e05186f-0dc9-20fb-9eb9-55c31e3ea4a2" testName="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_005_A_SCN_NF_005_A1_10000RowFile_CompletesInSingleRun" computerName="task-execution-f861e733-14c7-4eb2-8d27-f13e7e4fda85" duration="00:00:00.0531532" startTime="2026-09-21T15:10:30.2550010+00:00" endTime="2026-09-21T15:10:30.2550012+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b389965-0bed-437e-b945-dbd907f94287" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_004_A_SCN_004_A1_ExtraUnrecognizedColumns_AreIgnored" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="87759ffb-a4b8-7ce0-a40e-04b5ed588513">
+      <Execution id="35f98d3d-d243-44a0-99c5-a1a1c297efcb" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_004_A_SCN_004_A1_ExtraUnrecognizedColumns_AreIgnored" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_011_A_SCN_011_A1_BatchContinuesProcessingAfterInvalidRow" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="1e4d7d7b-f367-4f8c-6e6c-caba14cbd324">
+      <Execution id="90bb33c5-36a1-467c-84f7-f93832d57c1a" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_011_A_SCN_011_A1_BatchContinuesProcessingAfterInvalidRow" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_005_A_SCN_NF_005_A1_10000RowFile_CompletesInSingleRun" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="8e05186f-0dc9-20fb-9eb9-55c31e3ea4a2">
+      <Execution id="4b389965-0bed-437e-b945-dbd907f94287" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_NF_005_A_SCN_NF_005_A1_10000RowFile_CompletesInSingleRun" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;32/99/2026&quot;, src: &quot;America/Denver&quot;, tgt: &quot;UTC&quot;)" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="dde694a2-d125-1f5d-b433-73847917a4ae">
+      <Execution id="ff57cbce-0b72-422c-8b13-88eb9ab0e145" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_014_A_SCN_014_A1_UnrecognizedTimezone_ReasonReferencesFieldAndValue" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="b57cffaf-4576-5f65-4ac6-87f300700312">
+      <Execution id="c540548b-7334-4782-becb-2c7c2157960d" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_014_A_SCN_014_A1_UnrecognizedTimezone_ReasonReferencesFieldAndValue" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_026_B_SCN_026_B1_FallBackAmbiguousHour_ResolvesSuccessfully_NotInvalid" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="815a1304-ed32-6eca-0083-57b5a3cd7663">
+      <Execution id="38c4a526-8f93-47d1-9825-602c4f9a480c" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_026_B_SCN_026_B1_FallBackAmbiguousHour_ResolvesSuccessfully_NotInvalid" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_002_A_SCN_NF_002_A1_5InvalidRows_EachDistinctFailureCause_AllAppear" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="5a72d823-a27d-0a63-6b1b-4568b656ac25">
+      <Execution id="a0152cc5-6601-441d-a6b6-418f4f68bd19" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_NF_002_A_SCN_NF_002_A1_5InvalidRows_EachDistinctFailureCause_AllAppear" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_017_A_SCN_017_A1_UnidentifiableHeader_ExitCode2" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="a9a3ec2a-b4c1-cb4d-2658-cd9e3e4a9e3e">
+      <Execution id="bcb61127-025e-47ab-8c1f-230cefbc00e4" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_017_A_SCN_017_A1_UnidentifiableHeader_ExitCode2" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_021_022_NF_003_A_ThreeRuns_SummaryCountsAloneClassifyOutcome" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="815ca812-17d6-609f-c5f1-6f6a51634bcb">
+      <Execution id="791f56b9-5ee0-495d-bf1c-c7178f34a02f" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_021_022_NF_003_A_ThreeRuns_SummaryCountsAloneClassifyOutcome" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.STS_011_A2_OutputWriteFails_OrchestratorSurfacesFailure_ExitCode3_AfterAllRowsProcessed" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="3fb479a2-9a42-7ef0-3d17-b597e6ff2b86">
+      <Execution id="39bbe6ff-990c-4909-b482-13f2d3e2896b" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="STS_011_A2_OutputWriteFails_OrchestratorSurfacesFailure_ExitCode3_AfterAllRowsProcessed" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_020_A_SCN_020_A1_InvalidReport_IsSeparateFromSuccessfulOutput" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="fda9a8bb-f315-25c7-a818-6c26b7a61292">
+      <Execution id="1a24b849-23c2-4d05-aa0a-b0f96bbd83e4" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_020_A_SCN_020_A1_InvalidReport_IsSeparateFromSuccessfulOutput" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_023_A_SCN_023_A1_HeaderOnlyFile_CompletesCleanlyWithEmptyOutputsAndNoRowsMessage" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="8a812e79-fb24-20ca-98fc-b6d13a5cebfd">
+      <Execution id="8499249c-7e5f-4fd3-adc8-434b5edaba77" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_023_A_SCN_023_A1_HeaderOnlyFile_CompletesCleanlyWithEmptyOutputsAndNoRowsMessage" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_NF_001_A_SCN_NF_001_A1_100PercentOfValidRows_ProduceConvertedResults" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="c59b1988-1ca7-6c8d-3315-409eac83b380">
+      <Execution id="b3c3617e-0b3e-49cb-bbeb-f410083a2bcc" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_NF_001_A_SCN_NF_001_A1_100PercentOfValidRows_ProduceConvertedResults" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_012_A_SCN_012_A1_InvalidRowReport_ReferencesCorrectRowNumber" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="ed974b52-e5df-1d91-2532-ff5658cc96ce">
+      <Execution id="701da98c-8fff-4aa8-a5af-97290b4fc488" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_012_A_SCN_012_A1_InvalidRowReport_ReferencesCorrectRowNumber" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;2026-02-10 09:00:00&quot;, src: &quot;Mars/Colony_One&quot;, tgt: &quot;UTC&quot;)" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="4a15a0f4-9f69-000d-beef-c6562d070b91">
+      <Execution id="3fe9aa08-b0ec-4722-b143-1b12e271a232" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_001_A_SCN_001_A1_AllValidRows_ProduceExactCountSuccessfulOutput" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="208de7fc-435c-bb61-ffb3-ca1d9f37f74a">
+      <Execution id="55c173a8-d94a-4759-84ca-6db8f80f1e38" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_001_A_SCN_001_A1_AllValidRows_ProduceExactCountSuccessfulOutput" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.REQ_024_NoExplicitOffset_InterpretedAsLocalToSourceTimezone" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="7e743f08-8ade-c063-0d26-410503358f81">
+      <Execution id="cb30d553-d7a4-4f71-b02d-32e7f675769d" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="REQ_024_NoExplicitOffset_InterpretedAsLocalToSourceTimezone" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_015_A_SCN_015_A1_MissingSourceTimezone_ReasonIdentifiesTheField" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="92be5d0a-4434-0a10-475c-c5bc5ae38941">
+      <Execution id="745317fa-187b-4981-9ae8-3178b9428b32" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_015_A_SCN_015_A1_MissingSourceTimezone_ReasonIdentifiesTheField" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_006_A_SCN_006_A1_OneRowFailure_DoesNotAffectAnotherRowsSuccess" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="fc2a0b53-7bbc-48d0-e44e-70be096342b2">
+      <Execution id="002e209e-cbd6-4eb8-98fa-41c9e9aa0816" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_006_A_SCN_006_A1_OneRowFailure_DoesNotAffectAnotherRowsSuccess" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_002_A_SCN_002_A1_ColumnsIdentifiedByHeaderName_RegardlessOfOrder" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="cfef96ef-d5df-a4ba-069e-7c94d3e8f723">
+      <Execution id="488f6c79-9570-42cc-909a-93c1d710acb5" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_002_A_SCN_002_A1_ColumnsIdentifiedByHeaderName_RegardlessOfOrder" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.REQ_027_IdenticalSourceAndTargetTimezone_StillProducesUnchangedResult" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="1ae2be2a-8b10-64da-452a-4bcc01199ad2">
+      <Execution id="7f4b2ce5-0b56-44b9-aa06-9c30b2f98a2a" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="REQ_027_IdenticalSourceAndTargetTimezone_StillProducesUnchangedResult" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport(ts: &quot;2026-02-10 09:00:00&quot;, src: &quot;UTC&quot;, tgt: &quot;Europe/Atlantis&quot;)" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="aaa22096-3808-8cff-0927-6125b8d752b9">
+      <Execution id="29234840-26d0-4b0d-a7d8-283046a06529" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_008_009_010_A_InvalidRow_AbsentFromSuccess_PresentInInvalidReport" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_016_A_SCN_016_A1_MissingInputFile_ExitCode2_NoInvalidRowEntries" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="704d4a76-e119-00e8-eb55-01dab98d732d">
+      <Execution id="6d4e502a-0862-43be-8e71-a3ff115b432f" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_016_A_SCN_016_A1_MissingInputFile_ExitCode2_NoInvalidRowEntries" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_013_A_SCN_013_A1_UnparseableTimestamp_ReasonReferencesTimestampField" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="67191c0a-183c-22a9-6421-2a33751d34ac">
+      <Execution id="f7f8bb1a-c5e4-4be4-82a1-a21fbb9b9a33" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_013_A_SCN_013_A1_UnparseableTimestamp_ReasonReferencesTimestampField" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_018_A_SCN_018_A1_FileLevelError_NoRowsProcessed_BothOutputsAbsent" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="93a8a82e-9ad5-b471-ad5f-14c97eba97d5">
+      <Execution id="64b61c69-4c3c-47fc-b115-28fae86030f7" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_018_A_SCN_018_A1_FileLevelError_NoRowsProcessed_BothOutputsAbsent" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_028_A_SCN_028_A1_EntirelyBlankRow_SkippedNotCountedEitherWay" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="5a188a75-69ca-7901-be38-e09efbc529e4">
+      <Execution id="6624af0f-a2d5-4b4a-aa17-666d782e950c" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_028_A_SCN_028_A1_EntirelyBlankRow_SkippedNotCountedEitherWay" />
+    </UnitTest>
+    <UnitTest name="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests.ATP_026_A_SCN_026_A1_SpringForwardGap_ResolvesSuccessfully_NotInvalid" storage="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/timezoneutility.integration/bin/debug/net8.0/timezoneutility.integration.dll" id="1cfaea78-1723-8ccd-bb30-e82abe22820b">
+      <Execution id="4e0a3e60-a9fc-423d-a3c9-ef8b87fc8278" />
+      <TestMethod codeBase="/workdir/repositories/spec-kit-dotnet-cli-demo/tests/TimezoneUtility.Integration/bin/Debug/net8.0/TimezoneUtility.Integration.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="TimezoneUtility.Integration.Commands.ConvertBatchCommandTests" name="ATP_026_A_SCN_026_A1_SpringForwardGap_ResolvesSuccessfully_NotInvalid" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="dde694a2-d125-1f5d-b433-73847917a4ae" executionId="ff57cbce-0b72-422c-8b13-88eb9ab0e145" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a15a0f4-9f69-000d-beef-c6562d070b91" executionId="3fe9aa08-b0ec-4722-b143-1b12e271a232" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a72d823-a27d-0a63-6b1b-4568b656ac25" executionId="a0152cc5-6601-441d-a6b6-418f4f68bd19" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e743f08-8ade-c063-0d26-410503358f81" executionId="cb30d553-d7a4-4f71-b02d-32e7f675769d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a812e79-fb24-20ca-98fc-b6d13a5cebfd" executionId="8499249c-7e5f-4fd3-adc8-434b5edaba77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93a8a82e-9ad5-b471-ad5f-14c97eba97d5" executionId="64b61c69-4c3c-47fc-b115-28fae86030f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="208de7fc-435c-bb61-ffb3-ca1d9f37f74a" executionId="55c173a8-d94a-4759-84ca-6db8f80f1e38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92be5d0a-4434-0a10-475c-c5bc5ae38941" executionId="745317fa-187b-4981-9ae8-3178b9428b32" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fda9a8bb-f315-25c7-a818-6c26b7a61292" executionId="1a24b849-23c2-4d05-aa0a-b0f96bbd83e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc2a0b53-7bbc-48d0-e44e-70be096342b2" executionId="002e209e-cbd6-4eb8-98fa-41c9e9aa0816" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e4d7d7b-f367-4f8c-6e6c-caba14cbd324" executionId="90bb33c5-36a1-467c-84f7-f93832d57c1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67191c0a-183c-22a9-6421-2a33751d34ac" executionId="f7f8bb1a-c5e4-4be4-82a1-a21fbb9b9a33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87759ffb-a4b8-7ce0-a40e-04b5ed588513" executionId="35f98d3d-d243-44a0-99c5-a1a1c297efcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b57cffaf-4576-5f65-4ac6-87f300700312" executionId="c540548b-7334-4782-becb-2c7c2157960d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="704d4a76-e119-00e8-eb55-01dab98d732d" executionId="6d4e502a-0862-43be-8e71-a3ff115b432f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a188a75-69ca-7901-be38-e09efbc529e4" executionId="6624af0f-a2d5-4b4a-aa17-666d782e950c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c59b1988-1ca7-6c8d-3315-409eac83b380" executionId="b3c3617e-0b3e-49cb-bbeb-f410083a2bcc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed974b52-e5df-1d91-2532-ff5658cc96ce" executionId="701da98c-8fff-4aa8-a5af-97290b4fc488" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aaa22096-3808-8cff-0927-6125b8d752b9" executionId="29234840-26d0-4b0d-a7d8-283046a06529" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fb479a2-9a42-7ef0-3d17-b597e6ff2b86" executionId="39bbe6ff-990c-4909-b482-13f2d3e2896b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9a3ec2a-b4c1-cb4d-2658-cd9e3e4a9e3e" executionId="bcb61127-025e-47ab-8c1f-230cefbc00e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ae2be2a-8b10-64da-452a-4bcc01199ad2" executionId="7f4b2ce5-0b56-44b9-aa06-9c30b2f98a2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cfaea78-1723-8ccd-bb30-e82abe22820b" executionId="4e0a3e60-a9fc-423d-a3c9-ef8b87fc8278" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="815ca812-17d6-609f-c5f1-6f6a51634bcb" executionId="791f56b9-5ee0-495d-bf1c-c7178f34a02f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="815a1304-ed32-6eca-0083-57b5a3cd7663" executionId="38c4a526-8f93-47d1-9825-602c4f9a480c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfef96ef-d5df-a4ba-069e-7c94d3e8f723" executionId="488f6c79-9570-42cc-909a-93c1d710acb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e05186f-0dc9-20fb-9eb9-55c31e3ea4a2" executionId="4b389965-0bed-437e-b945-dbd907f94287" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="27" executed="27" passed="27" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.04]   Discovering: TimezoneUtility.Integration
+[xUnit.net 00:00:00.07]   Discovered:  TimezoneUtility.Integration
+[xUnit.net 00:00:00.07]   Starting:    TimezoneUtility.Integration
+Batch conversion complete: /tmp/batch-integration-a2f20c84-1643-4ec7-b178-91e00cd96db6/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-a2f20c84-1643-4ec7-b178-91e00cd96db6/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-a2f20c84-1643-4ec7-b178-91e00cd96db6/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-7bf628fe-e800-4ba7-9452-077fdba876ba/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-7bf628fe-e800-4ba7-9452-077fdba876ba/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-7bf628fe-e800-4ba7-9452-077fdba876ba/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-a0fb2618-abc7-404f-876d-b474d2a36efe/batch.csv
+  Total rows processed: 20
+  Succeeded:             4
+  Failed:                16
+Successful output:      /tmp/batch-integration-a0fb2618-abc7-404f-876d-b474d2a36efe/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-a0fb2618-abc7-404f-876d-b474d2a36efe/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-7b86833b-1579-4fed-8d76-311983476d94/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-7b86833b-1579-4fed-8d76-311983476d94/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-7b86833b-1579-4fed-8d76-311983476d94/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-9db11c75-3dcc-48f5-9b7c-004811ea5bb4/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-9db11c75-3dcc-48f5-9b7c-004811ea5bb4/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-9db11c75-3dcc-48f5-9b7c-004811ea5bb4/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-5a2c3f1e-ea83-4dc6-9121-3ae1ef6d7a92/batch.csv
+  Total rows processed: 4
+  Succeeded:             3
+  Failed:                1
+Successful output:      /tmp/batch-integration-5a2c3f1e-ea83-4dc6-9121-3ae1ef6d7a92/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-5a2c3f1e-ea83-4dc6-9121-3ae1ef6d7a92/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-88290fa4-8361-4fa6-bc86-a80398e82974/batch.csv
+  Total rows processed: 3
+  Succeeded:             3
+  Failed:                0
+Successful output:      /tmp/batch-integration-88290fa4-8361-4fa6-bc86-a80398e82974/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-88290fa4-8361-4fa6-bc86-a80398e82974/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-68648a17-7eb9-4021-8e58-975d5fe90dbc/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-68648a17-7eb9-4021-8e58-975d5fe90dbc/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-68648a17-7eb9-4021-8e58-975d5fe90dbc/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-8edac2db-9938-43a2-ab8f-c5ca1ccf1db0/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-8edac2db-9938-43a2-ab8f-c5ca1ccf1db0/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-8edac2db-9938-43a2-ab8f-c5ca1ccf1db0/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-afedb539-9a86-413e-b4ee-69ed13d7a6a4/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-afedb539-9a86-413e-b4ee-69ed13d7a6a4/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-afedb539-9a86-413e-b4ee-69ed13d7a6a4/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-0f748cb2-ca65-4a18-8c43-3d597281e0c1/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-0f748cb2-ca65-4a18-8c43-3d597281e0c1/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-0f748cb2-ca65-4a18-8c43-3d597281e0c1/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-c53264de-dd88-4781-a211-31f32348e78f/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-c53264de-dd88-4781-a211-31f32348e78f/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-c53264de-dd88-4781-a211-31f32348e78f/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-d38ce97d-b093-40c8-8ccf-2016a941e746/batch.csv
+  Total rows processed: 2
+  Succeeded:             1
+  Failed:                1
+Successful output:      /tmp/batch-integration-d38ce97d-b093-40c8-8ccf-2016a941e746/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-d38ce97d-b093-40c8-8ccf-2016a941e746/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runA.csv
+  Total rows processed: 5
+  Succeeded:             5
+  Failed:                0
+Successful output:      /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runA.converted.csv
+Invalid-row report:     /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runA.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runB.csv
+  Total rows processed: 5
+  Succeeded:             0
+  Failed:                5
+Successful output:      /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runB.converted.csv
+Invalid-row report:     /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runB.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runC.csv
+  Total rows processed: 5
+  Succeeded:             3
+  Failed:                2
+Successful output:      /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runC.converted.csv
+Invalid-row report:     /tmp/batch-integration-137ff3a5-386e-4d62-bde2-8784b7e5b515/runC.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-59c2affe-6e93-4078-9e71-8749919f392b/batch.csv
+  Total rows processed: 5
+  Succeeded:             0
+  Failed:                5
+Successful output:      /tmp/batch-integration-59c2affe-6e93-4078-9e71-8749919f392b/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-59c2affe-6e93-4078-9e71-8749919f392b/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-7b00e879-189c-4a9b-83dd-9b94a7c3026a/batch.csv
+  Total rows processed: 1
+  Succeeded:             1
+  Failed:                0
+Successful output:      /tmp/batch-integration-7b00e879-189c-4a9b-83dd-9b94a7c3026a/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-7b00e879-189c-4a9b-83dd-9b94a7c3026a/batch.invalid-rows.csv
+Error: Could not identify required columns in "/tmp/batch-integration-87506b4a-50b0-4998-b2f5-54174dedd814/badheader.csv". Expected a header row containing "timestamp", "source_timezone", and "target_timezone" (case-insensitive, any order). Found columns: "col_a", "col_b", "col_c".
+Batch conversion complete: /tmp/batch-integration-a75f60a5-2b35-4796-af3e-edc4062ca354/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-a75f60a5-2b35-4796-af3e-edc4062ca354/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-a75f60a5-2b35-4796-af3e-edc4062ca354/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-72b60d65-673b-4d95-bb2e-c3c8a45728ab/big-batch.csv
+  Total rows processed: 10000
+  Succeeded:             10000
+  Failed:                0
+Successful output:      /tmp/batch-integration-72b60d65-673b-4d95-bb2e-c3c8a45728ab/big-batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-72b60d65-673b-4d95-bb2e-c3c8a45728ab/big-batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-79803481-1448-4ae8-9035-882a4c9b14fc/batch.csv
+  Total rows processed: 3
+  Succeeded:             2
+  Failed:                1
+Successful output:      /tmp/batch-integration-79803481-1448-4ae8-9035-882a4c9b14fc/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-79803481-1448-4ae8-9035-882a4c9b14fc/batch.invalid-rows.csv
+Error: Batch conversion finished (1 succeeded, 1 failed) but could not write output to "/tmp/batch-integration-161609e6-e1c3-4ca0-9d79-be51c664bebf/blocked-destination/nested": Could not find a part of the path '/tmp/batch-integration-161609e6-e1c3-4ca0-9d79-be51c664bebf/blocked-destination/nested'.. No results were discarded; re-run with a writable --output-dir to retry writing.
+Error: Could not open input file "/tmp/batch-integration-1cffe21b-6514-4a60-a4bf-6295b8b82d14/missing-input.csv": file not found.
+Batch conversion complete: /tmp/batch-integration-38075d40-6e6b-4c8b-a710-c995c06cf4e3/batch.csv
+  Total rows processed: 3
+  Succeeded:             2
+  Failed:                1
+Successful output:      /tmp/batch-integration-38075d40-6e6b-4c8b-a710-c995c06cf4e3/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-38075d40-6e6b-4c8b-a710-c995c06cf4e3/batch.invalid-rows.csv
+Batch conversion complete: /tmp/batch-integration-b01187c8-7f50-4e64-9c7a-4fbd39c258ac/batch.csv
+  Total rows processed: 1
+  Succeeded:             0
+  Failed:                1
+Successful output:      /tmp/batch-integration-b01187c8-7f50-4e64-9c7a-4fbd39c258ac/batch.converted.csv
+Invalid-row report:     /tmp/batch-integration-b01187c8-7f50-4e64-9c7a-4fbd39c258ac/batch.invalid-rows.csv
+Error: Could not identify required columns in "/tmp/batch-integration-d3eaacd0-1fc5-42bd-b2a0-d755a5c04078/badheader.csv". Expected a header row containing "timestamp", "source_timezone", and "target_timezone" (case-insensitive, any order). Found columns: "col_a", "col_b", "col_c".
+[xUnit.net 00:00:00.27]   Finished:    TimezoneUtility.Integration
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
